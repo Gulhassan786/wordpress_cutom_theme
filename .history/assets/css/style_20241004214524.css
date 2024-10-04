@@ -1,0 +1,27 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content-area {
+        flex-direction: column;
+    }
+
+    .column {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-menu li {
+        margin: 10px 0;
+    }
+}

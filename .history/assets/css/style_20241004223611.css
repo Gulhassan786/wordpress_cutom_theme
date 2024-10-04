@@ -1,0 +1,26 @@
+body{
+    background-color: rgb(238, 237, 237);
+    color: white;
+}
+
+.header-image{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+nav{
+    background-color: rgb(224, 241, 152);
+}
+
+.nav-menu{
+    list-style: none;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-menu li{
+    
+}

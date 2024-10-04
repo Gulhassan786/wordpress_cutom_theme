@@ -1,0 +1,74 @@
+body{
+    background-color: rgb(238, 237, 237);
+}
+
+/* Image Styling
+.header-image{
+    width: 60%;
+    height: 40%;
+    display: block;
+} */
+
+/* Style for the custom logo */
+.header-image {
+    text-align: center; /* Centers the logo */
+    margin: 20px 0; /* Adds some space around the logo */
+}
+
+.header-image img {
+    width: 30%;
+    height: auto;
+    max-width: 100%;
+}
+
+/* Navigation Bar Styling */
+nav{
+    background-color: rgb(224, 241, 152);
+}
+
+.nav-menu{
+    list-style: none;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-menu li a{
+    text-decoration: none;
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-menu li a:hover{
+    color: rgb(0, 174, 255);
+}
+
+/* Section Styling */
+.content-area{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: grey;
+    height: 00px;
+}
+
+.column{
+    width: 45%;
+    padding: 20px;
+    background-color: white;
+
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
