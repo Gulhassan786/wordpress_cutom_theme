@@ -1,0 +1,91 @@
+body{
+    background-color: rgb(238, 237, 237);
+}
+
+/* Image Styling */
+.header-image {
+    text-align: center; /* Centers the logo */
+    margin: 20px 0; /* Adds some space around the logo */
+}
+
+.header-image img {
+    width: 30%;
+    height: auto;
+    max-width: 100%;
+}
+
+/* Navigation Bar Styling */
+nav{
+    background-color: rgb(224, 241, 152);
+}
+
+.nav-menu{
+    list-style: none;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-menu li a{
+    text-decoration: none;
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-menu li a:hover{
+    color: rgb(0, 174, 255);
+}
+
+/* Section Styling */
+.content-area{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: grey;
+}
+
+.left-column{
+    width:70%;
+    padding: 20px;
+    margin:20px;
+    background-color: white;
+    
+}
+
+.right-column{
+    width:30%;
+    padding: 20px;
+    margin:20px;
+    background-color: white;
+    
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Post Styling */
+.post{
+    border : 1px solid black;
+    border-radius : 5px;
+    color : white;
+    background-color: rgb(208, 208, 224);
+    margin: 20px;
+    padding: 20px;
+}
+
+.post-heading{
+    text-align: center;
+    justify-content: center;
+    color: blue
+}

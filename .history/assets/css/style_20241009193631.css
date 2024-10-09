@@ -1,0 +1,121 @@
+/* Ensure the body takes up the full viewport height */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(238, 237, 237);
+}
+
+/* Wrapper for content that needs to be above the footer */
+.wrapper {
+    min-height: 100%; /* Ensure wrapper takes up at least full viewport height */
+    display: flex;
+    flex-direction: column; /* Makes sure footer stays at the bottom */
+}
+
+/* Main content should grow and push footer to the bottom */
+.content-area {
+    flex-grow: 1; /* This makes sure the content area expands to push the footer down */
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: grey;
+}
+
+.left-column {
+    width: 70%;
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+}
+
+.right-column {
+    width: 30%;
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    width: 100%;
+    position: relative;
+    margin-top: auto; /* Push the footer to the bottom */
+}
+
+/* Image Styling */
+.header-image {
+    text-align: center; /* Centers the logo */
+    margin: 20px 0; /* Adds some space around the logo */
+}
+
+.header-image img {
+    width: 30%;
+    height: auto;
+    max-width: 100%;
+}
+
+/* Navigation Bar Styling */
+nav {
+    background-color: rgb(224, 241, 152);
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-menu li a:hover {
+    color: rgb(0, 174, 255);
+}
+
+/* Post Styling */
+.post {
+    border: 1px solid black;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(208, 208, 224);
+    margin: 20px;
+    padding: 20px;
+}
+
+.post-heading {
+    text-align: center;
+    justify-content: center;
+    color: rgb(226, 224, 139);
+}
+
+/* Pagination Styling */
+.pagination {
+    padding: 10px;
+    text-align: center;
+}
+
+.pagination a, .page-numbers.current {
+    display: inline-block;
+    /* Top - Bottom | Left - Right */ 
+    padding: 10px 15px;
+    background-color: rgb(237, 237, 240);
+    border-radius: 5px;
+    color: black;
+    margin: 2px 4px;
+}
+
+.page-numbers.current {
+    background-color: white;
+}
