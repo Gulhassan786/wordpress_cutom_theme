@@ -1,0 +1,172 @@
+/* Ensure the body and html take full height */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Wrapper for content that should push footer down */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full viewport height */
+}
+
+/* Content Area - the main section grows to fill space */
+.content-area {
+    flex-grow: 1; /* This allows the content area to take up available space */
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: grey;
+}
+
+.left-column {
+    width: 70%;
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+}
+
+.right-column {
+    width: 30%;
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    width: 100%;
+    position: relative;
+    margin-top: auto; /* Pushes the footer to the bottom */
+}
+
+/* Image Styling */
+.header-image {
+    text-align: center; /* Centers the logo */
+    margin: 20px 0; /* Adds some space around the logo */
+}
+
+.header-image img {
+    width: 30%;
+    height: auto;
+    max-width: 100%;
+}
+
+/* Navigation Bar Styling */
+nav {
+    background-color: rgb(224, 241, 152);
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-menu li a:hover {
+    color: rgb(0, 174, 255);
+}
+
+/* Post Styling */
+.post {
+    border: 1px solid black;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(208, 208, 224);
+    margin: 20px;
+    padding: 20px;
+}
+
+.post-heading {
+    text-align: center;
+    justify-content: center;
+    color: rgb(226, 224, 139);
+}
+
+/* Pagination Styling */
+.pagination {
+    padding: 10px;
+    text-align: center;
+}
+
+.pagination a, .page-numbers.current {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: rgb(237, 237, 240);
+    border-radius: 5px;
+    color: black;
+    margin: 2px 4px;
+}
+
+.page-numbers.current {
+    background-color: white;
+}
+
+
+.custom-header {
+    width: 100%; /* Full width for the header container */
+    overflow: hidden; /* To hide any overflow content */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.custom-header img {
+    width: 100%; /* Image takes up the full width */
+    height: 300px; /* Height adjusts based on the image's aspect ratio */
+    display: block; /* Remove extra spacing under the image */
+}
+
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+
+}
+
+.post-card{
+    text-decoration: none;
+}
+
+.card{
+    background-color: #e4dede;
+    border: 1px solid black;
+    border-radius: 4px;
+    text-align: center;
+    width: 300px;
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+.card-image img{
+    width: 100%;
+    height: auto;
+}
+
+.card-content{
+    padding: 10px;
+}
+
+.post-title{
+    color:rgb(0, 174, 255)
+}
